@@ -1,3 +1,8 @@
+# This repository mainly came from the following original repository. we modified some options according to our applications.
+- tested on pyTorch==1.0.1
+- cudaToolkit=10.0
+- torchvision==0.2.2
+
 # key points estimation and point instance segmentation approach for lane detection
 
 - Paper : key points estimation and point instance segmentation approach for lane detection

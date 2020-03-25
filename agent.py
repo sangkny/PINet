@@ -38,7 +38,7 @@ class Agent(nn.Module):
         self.current_epoch = 0
 
     def count_parameters(self, model):
-	    return sum(p.numel() for p in model.parameters() if p.requires_grad)
+        return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
     def setup_optimizer(self):
         self.lane_detection_optim = torch.optim.Adam(self.lane_detection_network.parameters(),
@@ -242,9 +242,9 @@ class Agent(nn.Module):
             self.current_epoch = epoch
             if epoch>0 and (epoch == 1000):
                 self.p.constant_lane_loss += 0.5
-		self.p.constant_nonexist += 0.5
-	        self.p.l_rate /= 2.0
-	        self.setup_optimizer()
+        self.p.constant_nonexist += 0.5
+        self.p.l_rate /= 2.0
+        self.setup_optimizer()
 
         return lane_detection_loss
 

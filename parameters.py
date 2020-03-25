@@ -15,8 +15,8 @@ class Parameters():
     x_size = 512
     y_size = 256
     resize_ratio = 8
-    grid_x = x_size/resize_ratio  #64
-    grid_y = y_size/resize_ratio  #32
+    grid_x = x_size//resize_ratio  #64
+    grid_y = y_size//resize_ratio  #32
     feature_size = 4
     regression_size = 110
     mode = 3
@@ -48,8 +48,8 @@ class Parameters():
     shadow_ratio=0.6
     scaling_ratio=0.2
     
-    train_root_url="TuSimple_dataset/train_set/"
-    test_root_url="TuSimple_dataset/test_set/"
+    train_root_url="./dataset/TuSimple_dataset/train_set/"
+    test_root_url="./dataset/TuSimple_dataset/test_set/"
 
     # test parameter
     color = [(0,0,0), (255,0,0), (0,255,0),(0,0,255),(255,255,0),(255,0,255),(0,255,255),(255,255,255),(100,255,0),(100,0,255),(255,100,0),(0,100,255),(255,0,100),(0,255,100)]
